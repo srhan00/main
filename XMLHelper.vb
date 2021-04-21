@@ -1,7 +1,10 @@
 Imports System.Xml
 Imports System.IO
 
+' Description: The function creates a xml file called Example.xml
+ 
 Public Sub CreateXMLFile
+    
 'File Path 
 Dim directoryPath As String = ("Files/")
 Dim fileName As String = "Example.xml"
