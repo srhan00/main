@@ -3,8 +3,9 @@
 
 using System.Xml;
 
-// Description: Goes to a link and reads the specified xml file 
-// 
+// <SUMMARY>
+// Goes to a link and reads the specified xml file 
+// </SUMMARY>
 
 private function ReadXMLFile() 
 {
