@@ -1,11 +1,10 @@
-// C# language 
-// 
+/*
+* Author: Stephen Han
+* Purpose: Goes to a link and reads the specified xml file 
+* Language: C#
+*/
 
 using System.Xml;
-
-// <SUMMARY>
-// Goes to a link and reads the specified xml file 
-// </SUMMARY>
 
 private function ReadXMLFile() 
 {
