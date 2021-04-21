@@ -4,6 +4,9 @@
 * Language: C#
 */
 
+using Android.Content;
+using Android.Media;
+
 public void DTMFToneGenerator(string number)
         {
             AudioManager audioMgr = (AudioManager)global::Android.App.Application.Context.GetSystemService(Context.AudioService);
