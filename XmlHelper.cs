@@ -3,35 +3,39 @@
 
 using System.Xml;
 
-String webUser = "";
-String webPassword = "";
+// Description: Goes to a link and reads the specified xml file 
+// 
 
-try 
+private function ReadXMLFile() 
 {
-XmlUrlResolver res = new XmlUrlResolver();
+  string webLink = "https://www.example.com/example.xml"
+  String webUser = "";
+  String webPassword = "";
 
-res.Credentials = new NetworkCredential(webUser, webPass);
+  try 
+  {
+    XmlUrlResolver res = new XmlUrlResolver();
 
-// Set the reader settings.
-XmlReaderSettings set = new XmlReaderSettings();
-set.XmlResolver = res;
-XmlReader reader = XmlReader.Create(webLink, set);
+    res.Credentials = new NetworkCredential(webUser, webPass);
 
-reader.MoveToContent();
+    // Set the reader settings.
+    XmlReaderSettings set = new XmlReaderSettings();
+    set.XmlResolver = res;
+    XmlReader reader = XmlReader.Create(webLink, set);
 
-// reader.ReadToFollowing( ) 
-// reader.ReadElementContentAsString();
+    reader.MoveToContent();
 
-}
+    // reader.ReadToFollowing( ) 
+    // reader.ReadElementContentAsString();
 
-catch (Exception ex)
-{
-  ProcessException(ex);
-}
+    reader.close();
+  }
 
-finally
-{
-// Important always close 
-
-reader.close();
+  catch (Exception ex)
+  {
+    if (ex != null) 
+    {
+        // todo: 
+    }
+  }
 }
