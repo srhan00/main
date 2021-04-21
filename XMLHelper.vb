@@ -1,10 +1,11 @@
+'
+' Author: Stephen Han
+' Purpose: The function creates a xml file called Example.xml
+' Language: VB.Net
+'
+
 Imports System.Xml
 Imports System.IO
-
-
-' <SUMMARY>
-' Description: The function creates a xml file called Example.xml
-' </SUMMARY>
 
 Public Sub CreateXMLFile
     
