@@ -1,4 +1,8 @@
-;'File Path 
+Imports System.Xml
+Imports System.IO
+
+Public Sub CreateXMLFile
+'File Path 
 Dim directoryPath As String = ("Files/")
 Dim fileName As String = "Example.xml"
 Dim FilePath As String = directoryPath + fileName
@@ -43,3 +47,5 @@ try
 
 
   End Try
+
+End Sub
