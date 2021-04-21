@@ -1,8 +1,11 @@
 Imports System.Xml
 Imports System.IO
 
+
+' <SUMMARY>
 ' Description: The function creates a xml file called Example.xml
- 
+' </SUMMARY>
+
 Public Sub CreateXMLFile
     
 'File Path 
